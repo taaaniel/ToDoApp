@@ -1,0 +1,15 @@
+.card .card-image .card-title.on-background {
+  bottom: 125px;
+  font-size: 64px;
+  line-height: 68px;
+}
+.date_on-background {
+  position: absolute;
+  padding: 24px;
+  bottom: 0px;
+  font-size: 14px;
+  color: #d2d2d2;
+}
+
+/*  */
+
