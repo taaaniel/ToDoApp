@@ -43,14 +43,14 @@
                 <div class="row">
                   <div class="input-field col s12">
                     <i class="material-icons prefix">mode_edit</i>
-                    <input id="task_title"  type="text" value="Default">
+                    <input id="task_title" type="text" value="">
                     <label for="task_title">Task title</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
                     <i class="material-icons prefix">mode_edit</i>
-                    <input name="task_category" id="task_category" type="text" value="Default">
+                    <input name="task_category" id="task_category" type="text" value="sssss">
                     <label for="task_category">Task Category</label>
                   </div>
                 </div>
@@ -58,16 +58,16 @@
                   <div class="col s12">
                     <p>Prority task</p>
                     <span>
-                        <input name="priority" type="radio" id="normal" checked/>
-                        <label for="normal">Normal</label>
+                        <input name="priority" type="radio" id="priority_high" value="priority_high" checked/>
+                        <label for="priority_high">High</label>
                       </span>
                     <span>
-                          <input name="priority" type="radio" id="high" />
-                          <label for="high">High</label>
+                          <input name="priority" type="radio" id="beach_access" value="beach_access" />
+                          <label for="beach_access">Normal</label>
                         </span>
                     <span>
-                            <input name="priority" type="radio" id="optional" />
-                            <label for="optional">Optional</label>
+                            <input name="priority" type="radio" id="low_priority"  value="low_priority"/>
+                            <label for="low_priority">Low</label>
                           </span>
                   </div>
                 </div>
@@ -97,17 +97,55 @@
           </div>
           <div class="card-content grey lighten-4">
             <div id="test4">
-              <ul class="tasks-list">
+              <div class="row">
+                <div class="col s12">
+                  <ul class="tasks-list" id="myTaskList">
+                    <!-- TASK HTM STUCTURE -->
+                  <!-- <li class="single-task">
+                    <div class="row">
+                        <div class="col s2">
+                          <a class='btn-floating'>
+                              <i class="material-icons">done</i>
+                          </a>
+                        </div>
+                        <div class="col s10">
+                          <h5 class="single-task__title">
+                            First Link With Icon
+                            <i class="material-icons">priority_high</i>
+                          </h5>
+                          <h6 class="single-task__category">
+                            sasasasa
+                          </h6>
+                          <p class="single-task__note">
+                            xscscsc
+                          </p>
+                        </div>
+                    </div>
+                    <div class="row single-task__date">
+                        <div class="col s6">
+                          <i class="tiny material-icons">event</i>
+                          <p class="single-task__date-day"> 24.02.1985</p> 
+                          <i class="tiny material-icons">access_time</i>
+                          <p class="single-task__date-time"> 24.02.1985</p> 
+                          </div>  
+                    </div>
+                    
+                    <div class="divider"></div>
+                      <div class="single-task_buttons">
+                        <a class='btn blue darken-4'>
+                            <i class="material-icons">mode_edit</i>
+                        </a>
+                        <a class='btn blue darken-4 right'>
+                            <i class="material-icons">close</i>
+                          </a>
+                      </div> 
+                    <div class="divider"></div>
+                  </li> -->
 
-                <li class="single-task">
-                  <i class="material-icons single-task__icon">cloud</i>
-                  <span class="single-task__title">
-                        First Link With Icon
-                      </span>
-                  <div class="divider"></div>
-                </li>
 
-              </ul>
+                </ul>
+                </div>
+              </div>
             </div>
             <div id="test5">Test 2</div>
             <div id="test6">Test 3</div>

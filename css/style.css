@@ -11,5 +11,25 @@
   color: #d2d2d2;
 }
 
-/*  */
+/* SINGLE TASK STYLE */
+.single-task {
+  margin-bottom: 20px;
+}
+.single-task__title {
+  margin: 0;
+}
+.single-task__category {
+  margin-top: 0;
+  color: #ababab;
+}
 
+.single-task__date p{
+  display: initial;
+  vertical-align: text-bottom;
+}
+.single-task_buttons {
+  padding: 10px;
+}
+.card .card-content  p.single-task__date-day {
+  margin-right: 20px;
+}
