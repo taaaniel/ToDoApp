@@ -2,12 +2,6 @@
 const form = document.getElementById("formTask");
 const addTaskButton = document.getElementById("addMyTask");
 
-let task = {
-  "title": form.task_title.value,
-  "category": form.task_category.value,
-  "priority": form.elements["priority"].value,
-  "note": form.task_note.value
-}
 
 
 // User clicked on button to add single task
@@ -22,15 +16,22 @@ addTaskButton.addEventListener('click', function() {
     "note": form.task_note.value
   }
 
+  let date = new Date();
+  let day = date.getDay();
+  let month = date.getMonth();
+  let year = date.getFullYear();
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+
   // If user clicked on button, app took the task object and 
   // put in the function parameter
-  addItmeTodo(task);
+  addItmeTodo(task, day, month, year, hour, minutes);
 
 });
 
 // Add new task to the tasks list
 
-function addItmeTodo(task) {
+function addItmeTodo(task, day, month, year, hour, minutes) {
 // create a html components to task item
 // create our list  
   let list = document.getElementById('myTaskList');
@@ -119,12 +120,12 @@ function addItmeTodo(task) {
 //create a task date day
   let dateDay = document.createElement('p');
   dateDay.className = "single-task__date-day";
-  dateDay.innerText = "24.02.1985";  
+  dateDay.innerHTML = day + "." + month + "." + year;  
 
 //create a task date time
   let dateTime = document.createElement('p');
   dateTime.className = "single-task__date-time";
-  dateTime.innerText = "24.02.1985";    
+  dateTime.innerHTML = hour + ":" + minutes;    
 
 
   // let buttons = document.createElement('div');
